@@ -1,0 +1,9 @@
+<div id="root">
+  <!-- Check if call is available before rendering -->
+  <app-call *ngIf="callingService.call()" [call]="callingService.call()!"></app-call>
+
+  <!-- Debugging header to ensure the component is being loaded -->
+  <h1>Call Component</h1>
+</div>
+
+<router-outlet></router-outlet>
